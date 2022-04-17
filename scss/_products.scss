@@ -1,0 +1,179 @@
+.products {
+  width: 1261px;
+  height: auto;
+  margin: 0 auto;
+  h2 {
+    margin: 25px 45px;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    &::after {
+      content: " ";
+      width: 44.94px;
+      height: 5px;
+      position: absolute;
+      background: #c0c0c0;
+      top: 30px;
+      left: 0;
+    }
+  }
+  .productsSlider {
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px;
+    .cards {
+      .spacing .price {
+        margin-bottom: 16px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 216px;
+          height: 200px;
+        }
+        .productTitle {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 600;
+          color: var(--medium-text-color);
+          margin: 6px 0 6px 0;
+        }
+        .rating {
+          height: 10px;
+          margin-bottom: 7.3504px;
+        }
+        .fullPrice {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          text-decoration-line: line-through;
+          color: var(--medium-text-color);
+        }
+        .price {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          color: var(--dark-text-color);
+        }
+        .credit {
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 15px;
+          color: var(--medium-text-color);
+        }
+
+        .off {
+          display: flex;
+          position: absolute;
+          padding: 12.25px 7.92px 0 0;
+          right: 0;
+          background: var(--icons-color);
+          color: var(--light-text-color);
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 22px;
+          clip-path: polygon(100% 0, 0 0, 100% 100%);
+          width: 81.36px;
+          height: 72.04px;
+          justify-content: flex-end;
+        }
+
+        button {
+          opacity: 0;
+          border: none;
+          border-radius: 5px;
+          background: var(--button-color);
+          color: var(--light-text-color);
+          padding: 8px 26px;
+          margin: 8px 0 14px 0;
+        }
+        &:hover {
+          background: var(--card-bg-color);
+          transition: 0.3s ease;
+          button {
+            opacity: 1;
+            &:hover {
+              opacity: 0.7;
+              transition: 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products {
+    h2 {
+      margin: 16px 20px 24px;
+    }
+    .productsSliderPagination {
+      bottom: unset !important;
+    }
+    .productsSlider {
+      padding: 0 20px;
+      .cards {
+        .card {
+          img {
+            width: 100%;
+            height: auto;
+          }
+          .productTitle {
+            font-size: 10px;
+            min-height: 32px;
+          }
+          .fullPrice {
+            font-size: 11px;
+            line-height: 15px;
+          }
+          .price {
+            font-size: 16px;
+            line-height: 22px;
+          }
+          .credit {
+            font-size: 11px;
+            line-height: 15px;
+          }
+          .off {
+            font-size: 10px;
+            line-height: 14px;
+            width: 50.4px;
+            height: 50.4px;
+            padding: 7.6px 7.92px 0 0;
+          }
+          button {
+            opacity: 1;
+            border: none;
+            border-radius: 5px;
+            background: var(--button-color);
+            color: var(--light-text-color);
+            padding: 8px 26px;
+            margin: 8px 0 14px 0;
+          }
+          &:hover {
+            button {
+              &:hover {
+                opacity: 0.7;
+                transition: 0.3s ease;
+              }
+            }
+          }
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+}

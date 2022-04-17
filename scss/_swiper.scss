@@ -1,0 +1,19 @@
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  color: var(--button-color) !important;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  color: var(--button-color) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--icons-base-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--icons-color) !important;
+}

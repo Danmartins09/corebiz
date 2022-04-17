@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Corebiz</title>
+</head>
+
+<body>
+    <header>
+        <div class="desktopHeader container">
+            <a href="index.html" class="logoLink"><img src="assets/corebizLogo.svg" alt="" class="logo"></a>
+            <input type="text" class="searchBar" placeholder="O que está procurando?">
+            <div class="icons">
+                <a href=""><img class="login" src="assets/userLogin.svg" alt="">Minha Conta</a>
+                <a href=""><img class="cart" src="assets/shoppingCart.svg" alt=""></a>
+                <span id="cartCounter">0</span>
+            </div>
+        </div>
+
+        <div class="mobileHeader">
+            <div class="icons">
+                <a href="" class="menuLink"><img class="menuMobile" src="assets/menuMobileIcon.svg"
+                        alt="menu mobile icon"></a>
+                <a href="index.html" class="logoLink"><img class="logoMobile" src="assets/corebizLogo.svg"
+                        alt="logo Corebiz" class="logo"></a>
+                <div class="shoppingCart">
+                    <a href=""><img class="cart" src="assets/shoppingCart.svg" alt=""></a>
+                    <span id="cartCounterMobile"></span>
+                </div>
+            </div>
+            <input type="text" class="searchBar" placeholder="O que está procurando?">
+        </div>
+
+    </header>
+    <main>
+        <section class="slider">
+
+            <div class="banners">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <p class="bannerTitle">Olá, o que você está buscando?</p>
+                        <p class="bannerSubtitle">Criar ou migrar seu e-commerce?</p>
+                        <img class="banner" src="assets/bannerDesktop.svg" alt="">
+                        <img class="bannerMobile" src="assets/bannerMobile.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="bannerTitle">Olá, o que você está buscando?</p>
+                        <p class="bannerSubtitle">Criar ou migrar seu e-commerce?</p>
+                        <img class="banner" src="assets/bannerDesktop.svg" alt="">
+                        <img class="bannerMobile" src="assets/bannerMobile.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="bannerTitle">Olá, o que você está buscando?</p>
+                        <p class="bannerSubtitle">Criar ou migrar seu e-commerce?</p>
+                        <img class="banner" src="assets/bannerDesktop.svg" alt="">
+                        <img class="bannerMobile" src="assets/bannerMobile.svg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination bannersPagination"></div>
+
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Mais Vendidos</h2>
+            <div class="productsSlider">
+
+                <div class="swiper-wrapper cards">
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <div class="swiper-pagination productsSliderPagination"></div>
+
+        </section>
+
+
+        <section class="newsletter">
+            <h3 class="signupTitle">Participe de nossas news com promoções e novidades!</h3>
+            <form class="signupForm">
+                <div class="formName">
+                    <input type="text" placeholder="Digite seu nome" id="inputName">
+                    <span id="inputNameAlert"></span>
+                </div>
+                <div class="formEmail">
+                    <input type="email" placeholder="Digite seu email" id="inputEmail">
+                    <span id="inputEmailAlert"></span>
+                </div>
+                <button type="submit" class="btnSend">Eu quero!</button>
+            </form>
+            <div class="success">
+                <h4>Seu e-mail foi cadastrado com sucesso!</h4>
+                <p class="successMessage">
+                    A partir de agora você receberá as novidade e ofertas exclusivas.
+                </p>
+                <button class="btnSuccess">Cadastrar novo e-mail</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="localization">
+                <h3>Localização</h3>
+                <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+                <p>Alphavile SP</p>
+                <p>brasil@corebiz.ag</p>
+                <p>+55 11 3090 1039</p>
+            </div>
+            <div class="getInTouch">
+                <button class="email"><img src="assets/mail.svg" alt=""> ENTRE EM CONTATO</button>
+                <button class="sac"><img src="assets/headset.svg" alt=""> FALE COM O NOSSO CONSULTOR ONLINE</button>
+            </div>
+            <div class="footerLogo">
+                <img class="corebiz" src="assets/corebizFooter.svg" alt="">
+                <img src="assets/vtexLogo.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

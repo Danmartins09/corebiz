@@ -1,0 +1,96 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 69px 0 0 0;
+  padding: 24px 0;
+  width: 100%;
+  background: var(--news-bg-color);
+  h3 {
+    font-family: "Lato";
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  input {
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    width: 280px;
+    padding-left: 16px;
+    margin-right: 8px;
+  }
+  button {
+    border: none;
+    border-radius: 5px;
+    background: var(--button-color);
+    color: var(--light-text-color);
+    height: 48px;
+    width: 140px;
+    font-family: "Lato", sans-serif;
+  }
+  .signupForm {
+    display: flex;
+    flex-direction: row;
+    .formName,
+    .formEmail {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      color: var(--alert-text-color);
+      span {
+        margin-top: 8px;
+      }
+    }
+  }
+  .success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .successMessage {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .btnSuccess {
+      width: 100%;
+      margin: 15px 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newsletter {
+    height: auto;
+    display: flex;
+    padding: 24px 16px;
+
+    .signupForm {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .formName {
+        #inputName {
+          width: 100%;
+        }
+      }
+      .formEmail {
+        #inputEmail {
+          width: 100%;
+          margin-top: 22px;
+        }
+      }
+      button {
+        width: 100%;
+        margin-top: 22px;
+      }
+    }
+  }
+}
