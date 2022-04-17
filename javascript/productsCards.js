@@ -36,7 +36,7 @@ axios({
       cards.innerHTML = cards.innerHTML + card;
     } else {
       console.log(data[i].installments[0]);
-      card = `<div class="swiper-slide card offer">
+      let card = `<div class="swiper-slide card offer">
       <img src="${data[i].imageUrl}" alt="" class="imgCard">
       <p class="productTitle" id="productTitle">${data[i].productName}</p>
       <img src="assets/Rating${data[i].stars}.svg" alt="" class="rating">
