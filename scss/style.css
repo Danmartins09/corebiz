@@ -330,6 +330,7 @@ header .icons #cartCounterMobile {
   font-weight: 600;
   color: var(--medium-text-color);
   margin: 6px 0 6px 0;
+  padding-left: 6px;
 }
 
 .products .productsSlider .cards .card .rating {
